@@ -254,7 +254,7 @@ def parse_model(d, ch):  # model_dict, input_channels(3)
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
-    parser.add_argument('--cfg', type=str, default='yolov3-tiny.yaml', help='model.yaml')
+    parser.add_argument('--cfg', type=str, default='yolov5-mobilenetv3large.yaml', help='model.yaml')
     parser.add_argument('--device', default='0', help='cuda device, i.e. 0 or 0,1,2,3 or cpu')
     opt = parser.parse_args()
     opt.cfg = check_file(opt.cfg)  # check file
